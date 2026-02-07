@@ -19,6 +19,9 @@ Guide for Python development in this project.
 - **Replace Unicode with ASCII** - Avoid encoding issues on Windows terminals
 - **No empty `__init__.py`** unless necessary
 
+**Guidelines:**
+- Use polars instead of pandas whenever possible. Read files as all strings and convert later if you need to.
+
 **Package Installation:**
 - Always use PowerShell commands instead of VS Code extensions or MCP. 
 - Always use venv.
@@ -32,3 +35,10 @@ Guide for Python development in this project.
 - If file has test reference at top and you change it, run tests
 - Always address warnings
 - Add `pytest` tests as appropriate.
+
+# Running Python
+
+- If you are going to run python code, create a script to avoid syntax errors. 
+- Remove any test or debug scripts when you are done with them, unless you were specifically asked to create the test. 
+- Make sure to activate the virtual environment at .venv before running python scripts; `& "C:\Users\super\Documents\savii\Analysis Tool\savii-data-scripts\.venv\Scripts\Activate.ps1"; python my_script.py`
+- To escape `"`, use `""`, not `\"`.
